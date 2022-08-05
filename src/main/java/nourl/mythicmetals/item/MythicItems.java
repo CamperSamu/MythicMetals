@@ -163,8 +163,8 @@ public class MythicItems implements ItemRegistryContainer {
     public static final Item BANGLUM_CHUNK = new Item(new OwoItemSettings().group(MythicMetals.TABBED_GROUP));
 
     public static class CustomMusicDiscItem extends MusicDiscItem {
-        public CustomMusicDiscItem(int comparatorOutput, SoundEvent sound, Settings settings) {
-            super(comparatorOutput, sound, settings);
+        public CustomMusicDiscItem(int comparatorOutput, SoundEvent sound, Settings settings, int lengthInSeconds) {
+            super(comparatorOutput, sound, settings, lengthInSeconds);
         }
 
         @Override
