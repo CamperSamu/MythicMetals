@@ -2,6 +2,7 @@ package nourl.mythicmetals.item;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.sound.SoundEvent;
@@ -163,8 +164,8 @@ public class MythicItems implements ItemRegistryContainer {
     public static final Item BANGLUM_CHUNK = new Item(new OwoItemSettings().group(MythicMetals.TABBED_GROUP));
 
     public static class CustomMusicDiscItem extends MusicDiscItem {
-        public CustomMusicDiscItem(int comparatorOutput, SoundEvent sound, Settings settings, int lengthInSeconds) {
-            super(comparatorOutput, sound, settings, lengthInSeconds);
+        public CustomMusicDiscItem(int comparatorOutput, SoundEvent sound, FabricItemSettings settings, int lengthInSeconds) {
+            super(comparatorOutput, sound, (Item.Settings) settings, lengthInSeconds);
         }
 
         @Override

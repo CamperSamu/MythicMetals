@@ -109,7 +109,7 @@ public class MythicTools implements SimpleFieldProcessingSubject<ToolSet> {
             }
         }
         public static final Item FROGE = new Froger(new FabricItemSettings().rarity(Rarity.EPIC).fireproof().equipmentSlot(stack -> EquipmentSlot.HEAD));
-        public static final Item DOGE = new MythicItems.CustomMusicDiscItem(42, RegisterSounds.DOG, new FabricItemSettings().rarity(Rarity.EPIC).fireproof().equipmentSlot(stack -> EquipmentSlot.HEAD).maxCount(1));
+        public static final Item DOGE = new MythicItems.CustomMusicDiscItem(42, RegisterSounds.DOG, new FabricItemSettings().rarity(Rarity.EPIC).fireproof().equipmentSlot(stack -> EquipmentSlot.HEAD).maxCount(1), 162);
     }
 
 }
